@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🎙️ Chat & Voice Bot Frontend  
 
-## Getting Started
+A modern, interactive frontend for a **real-time Chat and Voice Bot**, built with **Next.js**, **TailwindCSS**, **Framer Motion**, **AudioContext**, and **WebSocket** for seamless voice and text communication.  
 
-First, run the development server:
+---
 
+## ✨ Features  
+- 🖌 **Next.js + TailwindCSS** – Fast, responsive, and beautifully styled UI.  
+- 🎬 **Framer Motion** – Smooth and modern animations.  
+- 🎤 **Voice Support** –  
+  - Record audio using the **Web Audio API (AudioContext)**.  
+  - Playback bot responses with text-to-speech.  
+- 🔗 **WebSocket Connection** – Persistent, real-time chat and voice communication.  
+- 📱 **Responsive Design** – Optimized for desktop and mobile devices.  
+
+---
+
+## 🛠️ Tech Stack  
+| Technology     | Purpose                            |  
+|----------------|-----------------------------------|  
+| **Next.js**    | React framework for SSR/SPA         |  
+| **TailwindCSS**| Utility-first styling               |  
+| **Framer Motion**| Animations and transitions        |  
+| **AudioContext**| Voice recording and playback       |  
+| **WebSocket**  | Continuous, real-time communication |  
+
+---
+
+## 🚀 Getting Started  
+
+### 1️⃣ Prerequisites  
+- **Node.js** (v18 or later recommended)  
+- **npm** or **yarn** package manager  
+
+### 2️⃣ Installation  
+```bash
+# Clone the repository
+git clone https://github.com/your-username/chat-voice-bot-frontend.git
+
+# Navigate to the project folder
+cd chat-voice-bot-frontend
+
+# Install dependencies
+npm install
+# or
+yarn install
+```
+
+### 3️⃣ Environment Variables  
+Create a `.env.local` file in the root directory and add:  
+```env
+NEXT_PUBLIC_WS_URL=ws://your-backend-server-url
+```
+
+### 4️⃣ Run the Development Server  
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🧭 Usage  
+1. Start your backend WebSocket server.  
+2. Launch the frontend (`npm run dev`).  
+3. Click the **microphone button** to start recording your voice.  
+4. Speak your query → The bot processes and responds with both **text** and **voice**.  
+5. Enjoy smooth animations and real-time chat updates.  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 📸 Preview  
 
-To learn more about Next.js, take a look at the following resources:
+<img width="1470" height="956" alt="Screenshot 2025-09-19 at 11 14 18 PM" src="https://github.com/user-attachments/assets/cea238e5-314c-40f0-8089-7cab6d65e0b8" />
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🧑‍💻 Development Notes  
+- Uses **AudioContext** for audio recording and playback.  
+- Uses **Framer Motion** for animations like fade-ins, slides, and button transitions.  
+- Designed with **TailwindCSS** for fast styling and easy customization.  
+- WebSocket reconnect logic can be added for more robust connections.  
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📜 License  
+This project is licensed under the **MIT License** – feel free to use and modify it.  
